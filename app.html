@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reethu's Art Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Great Vibes', cursive;
+      background-image: url('paris.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .blur-box {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      color: black;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .blur-box img.logo {
+      width: 100px;
+      height: auto;
+      margin-bottom: 0px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .slogan {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    button {
+      font-family: 'Great Vibes', cursive;
+      font-size: 20px;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 10px;
+      background-color: #5f9ea0;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #9ac7d4;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .slogan {
+        font-size: 16px;
+      }
+
+      button {
+        font-size: 18px;
+        padding: 8px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="blur-box">
+    <header class="top-header">
+      <img src="logo.png" alt="App Logo" class="logo">
+    </header>
+    <h1>Welcome to Color Whispers</h1>
+    <p class="slogan">Discover the beauty of original paintings</p>
+    <a href="art app.html">
+      <button>Explore Gallery</button>
+    </a>
+  </div>
+</body>
+</html>
