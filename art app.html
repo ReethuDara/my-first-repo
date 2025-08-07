@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artopia - Discover & Buy Original Art</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 36px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .art-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .art-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .art-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .art-card .info {
+      padding: 15px;
+    }
+
+    .art-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .art-card p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Artopia</h1>
+    <p>Discover & Buy Original Art from Independent Creators</p>
+  </header>
+
+  <section class="gallery">
+    <div class="art-card">
+      <img src="rabbit.jpg" alt="Abstract Painting">
+      <div class="info">
+        <h3>Color Dreams</h3>
+        <p>By Ava Linton - ₹2,999</p>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="girl.jpg" alt="Modern Art">
+      <div class="info">
+        <h3>Urban Stillness</h3>
+        <p>By Noah Reed - ₹3,500</p>
+      </div>
+    </div>
+
+    <div class="art-card">
+      <img src="puppy.jpg" alt="Digital Landscape">
+      <div class="info">
+        <h3>Sunset Code</h3>
+        <p>By Mia Flores - ₹1,999</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Artopia. All rights reserved.
+  </footer>
+
+</body>
+</html>
